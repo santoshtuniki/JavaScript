@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>DOM</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			p, div, section {
+				margin: 10px 0;
+			}
+			.big{
+				font-size: 18px;
+			}
+			.aqua{
+				background-color: aqua;
+			}
+			img{
+				height: 200px;
+				width: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="para-1" class="aqua">Para 1</p>
+		<p id="para-2">Para 2</p>
+		<div class="xyz">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit modi adipisci blanditiis officiis quos quia itaque laborum at ab odio possimus vel, exercitationem consectetur perspiciatis deleniti. Saepe maxime esse velit.
+		</div>
+		<div><button onclick="changeColor();">Change Color</button></div>
+		<section class="xyz abc">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor necessitatibus hic, nam eius placeat rem temporibus ullam, eligendi consectetur neque consequatur autem itaque iure repellendus, accusamus optio ratione officia sunt.
+		</section>
+		<img src="https://tse4.mm.bing.net/th?id=OIP.nuTpKxxKZPR-EV71okFyegHaHZ&pid=Api&P=0" alt="evee">
+		<div><button onclick="changeImage();">Change Image</button></div>
+
+		<!-- External JavaScript => can be given in head/body -->
+		<script src="doc.js" charset="UTF-8"></script>
+	</body>
+</html>
