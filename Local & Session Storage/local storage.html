@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Local Storage</title>
+	</head>
+
+	<body>
+		Enter your favourite color: <input type="text" id="favorite-color"/>
+		Enter your favourite city: <input type="text" id="favorite-city"/>
+		<script>
+			/*
+				setItem( key, value ) -> Sets the value of the pair identified by key to value, 
+				creating a new key/value pair if none existed for key previously.
+			*/
+			document.querySelector( '#favorite-color' ).addEventListener( 'input', function(){
+				// you can store only "strings" in local storage
+				localStorage.setItem( 'favorite-color', this.value );
+				document.body.style.backgroundColor = this.value;
+			} );
+
+			document.querySelector( '#favorite-city' ).addEventListener( 'input', function(){
+				// you can store only "strings" in local storage
+				localStorage.setItem( 'favorite-city', this.value );
+			} );
+		</script>
+	</body>
+</html>
+
+<!-- sessionStorage -> The key value pairs are lost if we close the browser (temporary storage) unlike local storage (permanent storage)-->
